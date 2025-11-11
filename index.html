@@ -17,12 +17,34 @@
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #d0d0d0;
+      padding-bottom: 10px;
+    }
+    .header-text {
+      flex: 1;
+    }
     h1 {
-      text-align: center;
       font-size: 26px;
       letter-spacing: 0.5px;
       color: #003366;
-      margin-bottom: 5px;
+      margin: 0;
+    }
+    .contact {
+      font-size: 15px;
+      color: #444;
+      margin-top: 4px;
+    }
+    .photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      margin-left: 20px;
     }
     h2 {
       font-size: 18px;
@@ -38,20 +60,19 @@
     ul {
       margin: 0.5em 0 1em 1.5em;
     }
-    .contact {
-      text-align: center;
-      font-size: 15px;
-      margin-bottom: 25px;
-      color: #444;
-    }
   </style>
 </head>
 <body>
 
-  <h1>Clémentine Chazal</h1>
-  <div class="contact">
-    <p>CREST, ENSAE, Paris</p>
-    <p>clementine.chazal@ensae.fr</p>
+  <div class="header">
+    <div class="header-text">
+      <h1>Clémentine Chazal</h1>
+      <div class="contact">
+        <p>CREST, ENSAE, Paris</p>
+        <p>clementine.chazal@ensae.fr</p>
+      </div>
+    </div>
+    <img src="imageA.jpg" alt="Clémentine Chazal" class="photo">
   </div>
 
   <h2>PROFESSIONAL EXPERIENCE</h2>
@@ -82,4 +103,12 @@
   </ul>
 
   <h2>EDUCATION</h2>
-  <p>2021–2024 Student at École Normale Supérieure Paris-Saclay.<
+  <p>2021–2024 Student at École Normale Supérieure Paris-Saclay.</p>
+  <p>2021–2023 Recipient of the DeepMind Scholarship Program – ENS Paris-Saclay.</p>
+  <p>2022–2023 Master 2 in Mathematics, Vision, and Learning (MVA) – ENS Paris-Saclay.</p>
+  <p>2021–2022 Master 1 in Mathematics for Artificial Intelligence – Paris-Saclay University.</p>
+  <p>2020–2021 Magister in Mathematics – Paris-Sud University.</p>
+  <p>2018–2020 Preparatory classes MPSI / MP* – Lycée Carnot, Dijon.</p>
+
+</body>
+</html>
