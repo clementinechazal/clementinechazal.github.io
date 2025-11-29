@@ -4,57 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clémentine Chazal - CV</title>
+
   <style>
     body {
       font-family: "Georgia", "Times New Roman", serif;
-      background-color: #e0f7fa; /* fond bleu clair */
-      color: #2b2b2b;
-      margin: 60px auto;
-      max-width: 800px;
-      line-height: 1.6;
-      padding: 40px;
-      border: 1px solid #e0e0e0;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-
-    .header {
-      display: flex;
-      align-items: center;
-      border-bottom: 1px solid #d0d0d0;
-      padding-bottom: 10px;
-    }
-
-    .photo {
-      width: 100px;
-      height: 100px;
-      border-radius: 8px;
-      object-fit: cover;
-      border: 1px solid #ccc;
-      margin-right: 20px; /* espace entre la photo et le texte */
-    }
-
-    .header-text {
-      display: flex;
-      flex-direction: column;
-    }
-
-    h1 {
-      font-size: 26px;
-      letter-spacing: 0.5px;
-      color: #003366;
       margin: 0;
+      background-color: #ffffff; /* fond général blanc */
     }
 
-    .contact {
-      font-size: 15px;
-      color: #444;
-      margin-left: 10px; /* marge pour l'affiliation et l'adresse mail */
-      margin-top: 4px;
+    /* === LAYOUT GENERAL === */
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* === COLONNE GAUCHE === */
+    .sidebar {
+      background-color: #b3e5fc; /* bleu clair */
+      width: 260px;
+      padding: 30px 20px;
+      box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+    }
+
+    .sidebar .photo {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #fff;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+
+    .sidebar h1 {
+      font-size: 24px;
+      color: #003366;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      font-size: 16px;
+      color: #003366;
+      text-decoration: none;
+      margin: 10px 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    /* === CONTENU PRINCIPAL === */
+    .content {
+      flex: 1;
+      padding: 40px 60px;
+      background-color: white;
     }
 
     h2 {
-      font-size: 18px;
+      font-size: 20px;
       color: #004c4c;
       border-bottom: 1px solid #d0d0d0;
       padding-bottom: 4px;
@@ -62,31 +73,47 @@
     }
 
     p {
-      margin: 0.3em 0;
       text-align: justify;
-    }
-
-    ul {
-      margin: 0.5em 0 1em 1.5em;
+      line-height: 1.6;
     }
   </style>
 </head>
+
 <body>
 
-  <div class="header">
+<div class="container">
+
+  <!-- ===== COLONNE GAUCHE ===== -->
+  <div class="sidebar">
     <img src="photoA.jpg" alt="Clémentine Chazal" class="photo">
-    <div class="header-text">
-      <h1>Clémentine Chazal</h1>
-      <div class="contact">
-        <p>CREST, ENSAE, Paris</p>
-        <p>clementine.chazal@ensae.fr</p>
-      </div>
-    </div>
+
+    <h1>Clémentine Chazal</h1>
+
+    <a href="mailto:clementine.chazal@ensae.fr">Email</a>
+
+    <a href="https://scholar.google.fr/citations?user=b_DIT-UAAAAJ&hl=fr&oi=sra" target="_blank">
+      Google Scholar
+    </a>
   </div>
+
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <div class="content">
+    <h2>Affiliation</h2>
+    <p>CREST, ENSAE, Paris</p>
+
+    <h2>Présentation</h2>
+    <p>Vous pouvez mettre ici votre texte…</p>
+
+    <h2>Autre section</h2>
+    <p>Contenu…</p>
+  </div>
+
+</div>
+
 
   <h2>About me</h2>
   <ul>
-    I'm a third year PhD Student at CREST, ENSAE, Paris under the supervision of Anna Korba. I'm working on optimisation on the space of probability dsitribution and kernel methods.
+    I'm a third year PhD Student at CREST/ENSAE, Paris under the supervision of Anna Korba. I'm working on sampling, optimisation on the space of probability distribution and kernel methods.
   </ul>
 
   <h2>Papers & Preprints</h2>
