@@ -76,6 +76,43 @@
       text-align: justify;
       line-height: 1.6;
     }
+    /* ====== VERSION MOBILE ====== */
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;     /* La sidebar passe au-dessus */
+  }
+
+  .sidebar {
+    width: 100%;                /* Occupe toute la largeur */
+    padding: 20px;
+    text-align: center;         /* Centrer le contenu */
+    box-shadow: none;           /* Optionnel : plus joli sur mobile */
+  }
+
+  .sidebar .photo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+
+  .sidebar a {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .content {
+    padding: 20px;              /* Plus compact */
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  body, p, li {
+    font-size: 16px;            /* Lecture plus confortable */
+  }
+}
   </style>
 </head>
 
